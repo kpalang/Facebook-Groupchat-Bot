@@ -2,6 +2,7 @@ bin/
 obj/
 .vs/
 
+.gitignore
 poolikLikemine.js
 backup.js
 test.jpg
