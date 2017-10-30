@@ -50,4 +50,6 @@ public void ProcessMessage(string message, string senderName) {
 9. That should be it. Pretty much sky should be the limit now. Enjoy!
 10. **I advise you to run the bot on a dedicated machine to ensure better uptime and less stress on the machine.**
 
+*Feel free to leave suggestions and fixes at [reddit](https://redd.it/79oanm)*
+
 [logging]: https://i.imgur.com/LKPBmG9.png "Logging in"
