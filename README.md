@@ -47,7 +47,7 @@ public void ProcessMessage(string message, string senderName) {
       This is needed because right now the JavaScript part is not optimised. For me 2 restarts a day is enough on a laptop with 4GB of RAM. 
       
     * Now create a Task Scheduler task that will run the batfile you created in previous step.
-10. That should be it. Pretty much sky should be the limit now. Enjoy!
+9. That should be it. Pretty much sky should be the limit now. Enjoy!
+10. **I advise you to run the bot on a dedicated machine to ensure better uptime and less stress on the machine.**
 
 [logging]: https://i.imgur.com/LKPBmG9.png "Logging in"
-[utility]: https://i.imgur.com/afnGJP9.png "Configuring utility.bat"
