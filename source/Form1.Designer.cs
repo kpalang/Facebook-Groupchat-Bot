@@ -41,7 +41,7 @@
 			this.WB_MainWindow.MinimumSize = new System.Drawing.Size(20, 20);
 			this.WB_MainWindow.Name = "WB_MainWindow";
 			this.WB_MainWindow.ScrollBarsEnabled = false;
-			this.WB_MainWindow.Size = new System.Drawing.Size(1063, 450);
+			this.WB_MainWindow.Size = new System.Drawing.Size(1063, 613);
 			this.WB_MainWindow.TabIndex = 0;
 			this.WB_MainWindow.WebBrowserShortcutsEnabled = false;
 			// 
@@ -60,7 +60,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1087, 474);
+			this.ClientSize = new System.Drawing.Size(1087, 637);
 			this.Controls.Add(this.WB_MainWindow);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
 			this.Name = "BotMain";
