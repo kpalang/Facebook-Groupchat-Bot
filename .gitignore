@@ -1,9 +1,4 @@
-bin/
-obj/
+FacebookMessenger/
 .vs/
-
-.gitignore
-poolikLikemine.js
-backup.js
-test.jpg
-Wait.vb
+source/bin/
+source/obj/
