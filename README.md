@@ -36,7 +36,7 @@ public void ProcessMessage(string message, string senderName) {
     }
 }
 ```
-8. Now set up the bot to restart several times a day using Window's Task Scheduler. 
+8. Now set up the bot to restart several times a day using Windows' Task Scheduler. 
     * Create a batfile that will restart the application
     ```
     taskkill /F /IM FacebookMessenger.exe
