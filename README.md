@@ -5,7 +5,7 @@ The bot responds to commands sent in a group or direct chat, although latter is 
 ## Usage
 1. Create a Facebook user. Any account will work, but making a dedicated one is in my opinion more convenient.
 2. Download the project
-3. Run **_source.sln_** to try and configure the client.
+3. Run **_source.sln_** to configureand try the client.
 4. Now go to `Form1_Load` method and edit the messenger url to your respective chat url.
 ```c#
 private void Form1_Load(object sender, EventArgs e) {
