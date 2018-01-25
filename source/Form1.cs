@@ -3,6 +3,7 @@ using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Security.Permissions;
+using System.Diagnostics;
 
 namespace FacebookMessenger
 {
@@ -24,7 +25,7 @@ namespace FacebookMessenger
 			WB_MainWindow.ObjectForScripting = this;
 
 			// Set Messenger chat thread URL ////////////////////////////////////////////////////////////////////
-			WB_MainWindow.Navigate("https://www.messenger.com/t/xxxxxxxxxxxx");
+			WB_MainWindow.Navigate("https://www.messenger.com/t/kaur.palang");
 			// //////////////////////////////////////////////////////////////////////////////////////////////////
 
 			WB_MainWindow.DocumentCompleted += new WebBrowserDocumentCompletedEventHandler(NavigationComplete);			
@@ -35,14 +36,17 @@ namespace FacebookMessenger
 		/// <param name="message">Message sent to group</param>
 		/// <param name="senderName">Name of the sender in format: Firstname Lastname (NOT NICKNAME)</param>
 		/// </summary>
-		public void ProcessMessage(string message, string senderName) {
-			if (!isWorking && !senderName.Equals("Bot Master")) {				
+		public void ProcessMessage(string message, string senderName, string html) {
+			if (!isWorking && !senderName.Equals("Bot Meister")) {
 				String[] args = message.Split();
 
-				switch (args[0]) {
-					case "!ping":
-						SendMessage("pong");
-						break;
+				if (args[0].StartsWith("!")) {
+					String cmd = args[0].Remove(0, 1);
+					switch (cmd) {
+						case "ping":
+							SendMessage("pong");
+							break;
+					}
 				}
 			}
 		}
@@ -106,6 +110,6 @@ namespace FacebookMessenger
 				Timer_Utility.Enabled = false;
 				Application.Restart();
 			}
-		}
+		}		
 	}
 }

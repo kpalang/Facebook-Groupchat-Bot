@@ -8,7 +8,7 @@
 	} else {
 		return lNode.innerHTML;
 	}
-}		
+}
 
 function SetupListeners() {
 	var target = document.getElementById('js_1');
@@ -20,15 +20,12 @@ function SetupListeners() {
 		nodes = target.querySelectorAll('._aok > span._3oh-');
 
 		var lastNode = nodes[nodes.length - 1];
-		
-		var msg = GetMessage(lastNode);
 
+		var msg = GetMessage(lastNode);
+		
 		var pics = target.querySelectorAll('._4ld- > img');
 		var name = pics[pics.length - 1].getAttribute('alt');
-
 		if (msg !== lastTxt) {
-			lastTxt = msg;
-
 			if (pics.length > 0) {
 				window.external.ProcessMessage(msg, name, pics[0].innerHTML);
 			} else {
