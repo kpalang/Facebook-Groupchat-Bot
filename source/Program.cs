@@ -16,7 +16,7 @@ namespace FacebookMessenger
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new BotMain());
+			Application.Run(new FacebookBot());
 		}
 	}
 }

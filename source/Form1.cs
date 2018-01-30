@@ -9,11 +9,11 @@ namespace FacebookMessenger
 {
 	[PermissionSet(SecurityAction.Demand, Name = "FullTrust")]
 	[System.Runtime.InteropServices.ComVisibleAttribute(true)]
-	public partial class BotMain : Form
+	public partial class FacebookBot : Form
 	{
 		public bool isWorking = false;
 		
-		public BotMain() {
+		public FacebookBot() {
 			InitializeComponent();
 		}
 
@@ -25,7 +25,7 @@ namespace FacebookMessenger
 			WB_MainWindow.ObjectForScripting = this;
 
 			// Set Messenger chat thread URL ////////////////////////////////////////////////////////////////////
-			WB_MainWindow.Navigate("https://www.messenger.com/t/kaur.palang");
+			WB_MainWindow.Navigate("https://www.messenger.com/t/xxxxxxxxxxxxx");
 			// //////////////////////////////////////////////////////////////////////////////////////////////////
 
 			WB_MainWindow.DocumentCompleted += new WebBrowserDocumentCompletedEventHandler(NavigationComplete);			
@@ -62,6 +62,7 @@ namespace FacebookMessenger
 			Clipboard.Clear();
 
 			Clipboard.SetText(message.Trim());
+			
 			WB_MainWindow.Document.ExecCommand("Paste", false, null);				
 
 			await Sleep(100);

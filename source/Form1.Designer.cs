@@ -1,6 +1,6 @@
 ﻿namespace FacebookMessenger
 {
-	partial class BotMain
+	partial class FacebookBot
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FacebookBot));
 			this.WB_MainWindow = new System.Windows.Forms.WebBrowser();
 			this.Timer_ScriptInsert = new System.Windows.Forms.Timer(this.components);
 			this.Timer_Utility = new System.Windows.Forms.Timer(this.components);
@@ -56,14 +57,15 @@
 			this.Timer_Utility.Interval = 2000;
 			this.Timer_Utility.Tick += new System.EventHandler(this.Timer_Utility_Tick);
 			// 
-			// BotMain
+			// FacebookBot
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1087, 637);
 			this.Controls.Add(this.WB_MainWindow);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-			this.Name = "BotMain";
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+			this.Name = "FacebookBot";
 			this.Text = "Facebook Messenger Groupchat Bot";
 			this.Load += new System.EventHandler(this.Form1_Load);
 			this.ResumeLayout(false);
