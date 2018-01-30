@@ -17,7 +17,7 @@ private void Form1_Load(object sender, EventArgs e) {
      WB_MainWindow.DocumentCompleted += new WebBrowserDocumentCompletedEventHandler(NavigationComplete);
 }
 ```
-5. Run your program and log in using the preferred account. **Be sure to tick _Keep me signed in in_**
+5. Run your program and log in using the preferred account. **Be sure to tick _Keep me signed in_**
 ![alt text][logging]
 6. Basically your bot is ready. By default it reponds to command _!ping_ with _pong_. However you might want to have more functionality.
 7. Find ProcessMessage method.
